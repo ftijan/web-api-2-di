@@ -6,7 +6,7 @@ namespace Example.Api
     {
         public void Configuration(IAppBuilder app)
         {
-
+            WebApiConfig.Configure(app);
         }
     }
 }
