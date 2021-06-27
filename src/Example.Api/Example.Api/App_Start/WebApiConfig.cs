@@ -4,8 +4,16 @@ using System.Web.Http;
 
 namespace Example.Api
 {
+    /// <summary>
+    /// Configures the API composition.
+    /// </summary>
     public class WebApiConfig
     {
+        /// <summary>
+        /// Called by the OWIN <see cref="Startup"/> instance to execute 
+        /// application composition and configuration logic.
+        /// </summary>
+        /// <param name="app">The app builder instance.</param>
         public static void Configure(IAppBuilder app)
         {
             HttpConfiguration config = new HttpConfiguration();
