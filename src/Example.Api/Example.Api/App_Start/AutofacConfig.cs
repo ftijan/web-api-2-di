@@ -50,8 +50,7 @@ namespace Example.Api
 
             // TODO: add other services
 
-
-            // Set Autofac dependency resolver
+                        
             Container = builder.Build();
 
             return Container;
