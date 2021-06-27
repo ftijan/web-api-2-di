@@ -13,6 +13,7 @@ namespace Example.Api
         /// <param name="app">The app builder instance.</param>
         public void Configuration(IAppBuilder app)
         {
+            SecurityConfig.Configure(app);
             WebApiConfig.Configure(app);
         }
     }
