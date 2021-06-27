@@ -21,7 +21,10 @@ namespace Example.Api
             // JSON formatter
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
 
-            app.UseWebApi(config);
+            // Set Autofac as dependency injector
+            AutofacConfig.Initialize(config);
+
+            app.UseWebApi(config);            
         }
     }
 }
